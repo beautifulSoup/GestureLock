@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tangotkk.gesturelock.sample.ResetGestureAuthActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入您设置的手势密码"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#666"/>
+
+    <com.tangotkk.gesturelock.library.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/info_tv"
+        android:layout_centerHorizontal="true"
+        app:error_color="@color/colorError"
+        app:normal_color="@color/colorUnselected"
+        app:correct_color="@color/colorSelected"
+        app:draw_arrow="false"
+        app:path_line_width="1dp"
+        app:center_round_radius="10dp"
+        app:circle_radius="25dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/auth_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证登录密码"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

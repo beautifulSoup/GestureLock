@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="LockPatternView">
+        <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height" -->
+        <attr name="aspect" format="string" />
+        <attr name="error_color" format="color|reference"/>
+        <attr name="normal_color" format="color|reference"/>
+        <attr name="correct_color" format="color|reference"/>
+        <attr name="draw_arrow" format="boolean"/>
+        <attr name="arrowSrc" format="reference"/>
+        <attr name="path_line_width" format="dimension"/>
+        <attr name="circle_line_width" format="dimension"/>
+        <attr name="center_round_radius" format="dimension"/>
+        <attr name="circle_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="GestureIndicatorView">
+        <attr name="color_selected" format="color|reference" />
+        <attr name="color_unselected" format="color|reference"/>
+        <attr name="circle_stroke_width" format="dimension"/>
+        <attr name="indicator_circle_radius" format="dimension"/>
+
+    </declare-styleable>
+
+</resources>
