@@ -30,7 +30,6 @@ import android.view.accessibility.AccessibilityManager;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class LockPatternView extends View {
     // Aspect to use when rendering this view
@@ -1027,7 +1026,6 @@ public class LockPatternView extends View {
         final int squareWidth = (int)mSquareWidth;
         final int squareHeight = (int)mSquareHeight;
 
-        Logs.info(String.format(Locale.getDefault(), "leftX %d topY %d", leftX, topY));
 
 
         final int width = Math.min(squareWidth, getCellWidth());
@@ -1042,7 +1040,6 @@ public class LockPatternView extends View {
         int x = leftX + offsetX + mCircleRadius;
         int y = topY + offsetY + mCircleRadius;
 
-        Logs.info(String.format(Locale.getDefault(), "x %d y %d", x, y));
 
 
         mCirclePaint.setColor(getCircleColor(partOfPattern));
